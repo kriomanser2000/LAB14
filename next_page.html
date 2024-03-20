@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <link rel="stylesheet" href="next_page.css">
+</head>
+<body>
+    <section>
+        <h1>User Details</h1>
+        <form id="detail-page-form">
+            <div class="inputbox">
+                <input type="text" name="name" required>
+                <label for="">Name</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" name="surname" required>
+                <label for="">Surname</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" name="birth_year" required>
+                <label for="">Birth Year</label>
+            </div>
+            <div class="inputbox">
+                <select name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>  
+                </select>
+                <label for="">Gender</label>
+            </div>
+            <div class="inputbox">
+                <input type="tel" name="phone">
+                <label for="">Phone Number</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" name="skype">
+                <label for="">Skype</label>
+            </div>
+            <button type="submit">Save</button>
+            <button type="button" onclick="exit()">Exit</button>
+        </form>
+    </section>
+    <script src="javascript.js"></script>
+</body>
+</html>
